@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Kelas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }/* Header */
+.header {
+  background: #2f66e0;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Content */
+.container {
+  padding: 25px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Foto kelas */
+.foto-kelas {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.foto-kelas img {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  background: #ddd;
+}
+
+/* Grid murid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+  </style>
+</head>
+<body>  <!-- Header -->  <div class="header">
+    <h1>CLASS VII-A</h1>
+    <p>MASA JHS</p>
+  </div>  <!-- Content -->  <div class="container"><h2>VII-A</h2>
+
+<div class="foto-kelas">
+  <img src="fotokelas.jpg" alt="Foto Kelas" />
+</div>
+
+<h3>Daftar Murid</h3>
+
+<div class="grid">
+  <div class="card">
+    <img src="juantroll.png" alt="Juan" />
+    <div class="name">Juan</div>
+  </div>
+  <div class="card">
+    <img src="murid2.jpg" alt="Disti Mujib" />
+    <div class="name">Disti Mujib</div>
+  </div>
+  <div class="card">
+    <img src="murid3.jpg" alt="Arya Eka" />
+    <div class="name">Arya Eka</div>
+  </div>
+  <!-- lanjutkan sampai 32 murid -->
+</div>
+
+  </div></body>
+</html>
