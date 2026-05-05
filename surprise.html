@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>HBD BOS</title>
+<style>
+    body {
+        background: linear-gradient(to right, #ffe6f0, #fff0f5);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 50px;
+        overflow: hidden;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        display: inline-block;
+    }
+
+    h1 {
+        color: #ff4da6;
+    }
+
+    /* KUE */
+    .cake {
+        position: relative;
+        width: 200px;
+        height: 150px;
+        margin: 40px auto;
+    }
+
+    .layer {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        background: #ff99cc;
+        border-radius: 10px;
+    }
+
+    .layer:nth-child(1) { top: 0; }
+    .layer:nth-child(2) { top: 50px; background: #ff66b2; }
+    .layer:nth-child(3) { top: 100px; background: #ff3385; }
+
+    /* POTONGAN */
+    .slice {
+        position: absolute;
+        width: 100px;
+        height: 150px;
+        background: transparent;
+        border-right: 4px solid #fff;
+        left: 50px;
+        top: 0;
+        animation: cutCake 3s infinite alternate;
+    }
+
+    @keyframes cutCake {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(40px); }
+    }
+
+    /* BUNGA */
+    .flower {
+        position: absolute;
+        font-size: 30px;
+        animation: fall 5s linear infinite;
+    }
+
+    @keyframes fall {
+        0% { transform: translateY(-50px); opacity: 1; }
+        100% { transform: translateY(600px); opacity: 0; }
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>🎉 HBD BOSS 🎉</h1>
+    <h2></h2>
+    <p>Semoga selalu sehat, bahagia, dan diberkati Tuhan. Terima kasih untuk semua kasih dan doa Mama.
+"Tuhan memberkati engkau dan melindungi engkau."
+— Bilangan 6:24</p>
+
+    <div class="cake">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="slice"></div>
+    </div>
+</div>
+
+<!-- Bunga jatuh -->
+<div class="flower" style="left:10%">🌸</div>
+<div class="flower" style="left:30%; animation-delay:1s;">🌼</div>
+<div class="flower" style="left:50%; animation-delay:2s;">🌺</div>
+<div class="flower" style="left:70%; animation-delay:3s;">🌷</div>
+<div class="flower" style="left:90%; animation-delay:4s;">🌹</div>
+
+</body>
+</html>
